@@ -1,0 +1,17 @@
+*{
+    margin: 10px;
+}
+:root{
+ --efa-orange-:hsl(26, 100%, 55%);
+ --efa-pale-orange-:hsl(25, 100%, 94%);
+ --efa-very-dark-blue:hsl(220, 13%, 13%);
+ --efa-dark-grayish-blue:hsl(219, 9%, 45%);
+ --efa-grayish-blue:hsl(220, 14%, 75%);
+ --efa-light-grayish-blue:hsl(223, 64%, 98%);
+ --efa-white:hsl(0, 0%, 100%);
+ --efa-black:hsl(0, 75%, 0%);
+}
+body{
+    font-size: 16px;
+    margin-left: 100px;
+}
