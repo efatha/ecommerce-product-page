@@ -101,3 +101,31 @@ aside{
     border-radius: 5px;
     margin-top: 20px;
 }
+button{
+    width:250px;
+    height: 50px;
+    background-color: var(--efa-orange-);
+    opacity: 68%;
+    border: transparent;
+    border-radius: 8px;
+    color:var(--efa-black);
+    font-weight: 700;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+}
+.counter-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--efa-light-grayish-blue);
+    height:50px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+}
+.addToCart{
+    display: inline-block;
+    position: relative;
+    bottom:10px;
+}
