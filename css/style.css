@@ -32,3 +32,41 @@ li:hover{
 header .avatar-bucket{
     display: flex;
 }
+.avatar-bucket{
+    display: flex;
+    margin-left: 350px;
+}
+.profile{
+    position: relative;
+    bottom:20px;
+}
+.profile:hover{
+    border: 2px solid var(--efa-orange-);
+    border-radius: 50%;
+}
+.cart{
+    margin-right: 0px;
+}
+.icon-menu{
+    display: none;
+}
+h1{
+    color:var(--efa-black);
+}
+p, code{
+    color: var(--efa-dark-grayish-blue);
+}
+main{
+    display: flex;
+    margin-left: 70px;
+}
+aside{
+    padding-left: 70px;
+    width: 480px;
+    position: relative;
+    top:35px;
+}
+.product1{
+    border-radius: 10px;
+    height: 320px;
+}
