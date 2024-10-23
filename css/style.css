@@ -15,3 +15,20 @@ body{
     font-size: 16px;
     margin-left: 100px;
 }
+/*styles the ul header*/
+ul{
+    display: flex;
+    list-style: none;
+    position:relative;
+}
+li{
+    color:var(--efa-grayish-blue);
+}
+li:hover{
+    border-bottom:4px solid var(--efa-orange-);
+    padding-bottom: 20px;
+    color: var(--efa-dark-grayish-blue);
+}
+header .avatar-bucket{
+    display: flex;
+}
