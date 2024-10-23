@@ -129,3 +129,14 @@ button{
     position: relative;
     bottom:10px;
 }
+footer{
+    position: relative;
+    bottom:40px;
+    margin-left: 70px;
+}
+img,footer{
+    border-radius: 5px;
+}
+.footImg:hover{
+    opacity: 0.5;
+}

@@ -21,3 +21,13 @@ increaseBtn.addEventListener("click", () => {
 function updateCount() {
   countDisplay.textContent = count;
 }
+
+ // JavaScript for changing main product image
+ const thumbnails = document.querySelectorAll('.image-gallery img');
+ const mainImage = document.querySelector('.product1');
+
+ thumbnails.forEach((thumbnail) => {
+     thumbnail.addEventListener('click', () => {
+         mainImage.src = thumbnail.src.replace('-thumbnail', '');
+     });
+ });
