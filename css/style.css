@@ -115,14 +115,37 @@ button{
     display: flex;
     flex-direction: row;
 }
+.count{
+    font-weight: 700;
+    padding-top: 15px;
+    text-align: center;
+    width: 50px;
+    height: 35px;
+    border-radius: 8px;
+}
 .counter-container{
     display: flex;
+    position:relative;
+    bottom:20px;
     flex-direction: row;
     background-color: var(--efa-light-grayish-blue);
     height:50px;
     border-radius: 8px;
     align-items: center;
     justify-content: space-around;
+}
+.increase,.decrease{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 10px;
+    width:30px;
+    height: 30px;
+    border: transparent;
+    border-radius: 8px;
+    font-weight: 700;
 }
 .addToCart{
     display: inline-block;

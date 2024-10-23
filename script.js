@@ -21,6 +21,7 @@ increaseBtn.addEventListener("click", () => {
 function updateCount() {
   countDisplay.textContent = count;
 }
+console.log(decreaseBtn, increaseBtn, countDisplay);
 
  // JavaScript for changing main product image
  const thumbnails = document.querySelectorAll('.image-gallery img');
