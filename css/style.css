@@ -29,7 +29,7 @@ li:hover{
     padding-bottom: 20px;
     color: var(--efa-dark-grayish-blue);
 }
-header .avatar-bucket{
+header,.avatar-bucket{
     display: flex;
 }
 .avatar-bucket{
@@ -46,6 +46,10 @@ header .avatar-bucket{
 }
 .cart{
     margin-right: 0px;
+}
+.line{
+    position: relative;
+    bottom:30px;
 }
 .icon-menu{
     display: none;
@@ -69,4 +73,31 @@ aside{
 .product1{
     border-radius: 10px;
     height: 320px;
+}
+#next, #previous{
+    display:none;
+}
+.price{
+    display: flex;
+    position: relative;
+    right:10px;
+}
+.oldPrice{
+    position: relative;
+    bottom:10px;
+    text-decoration: line-through;
+    color:var(--efa-dark-grayish-blue)
+}
+.percentage{
+    border: 1px solid var(--efa-dark-grayish-blue);
+    background-color: var(--efa-black);
+    color:var(--efa-white);
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
