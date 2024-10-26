@@ -163,3 +163,150 @@ img,footer{
 .footImg:hover{
     opacity: 0.5;
 }
+@media (max-width:678px){
+    *{
+        margin-top: 10px;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        box-sizing: border-box;
+    }
+  body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  ul{
+    display: none;
+    
+  }
+  .avatar-bucket{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+/*This styles the header on the mobile device*/
+  .icon-menu{
+    display: flex;
+    position:absolute;
+    left: 10px;
+    height: 30px;
+    width:40px;
+    top:30px;
+}
+.sneakers{
+    display: inline-block;
+    position:absolute;
+    left: 70px;
+}
+  .cart{
+    position:relative;
+    left:240px;
+    bottom:10px;
+  }
+  .profile{
+    position: relative;
+    bottom:10px;
+    left:260px;
+    bottom:20px;
+    width:40px;
+}
+.product1{
+    border-radius: 0;
+    height: 450px;
+    width:480px;
+    position:absolute;
+    top:80px;
+    left: 0px;
+    z-index: -1;
+}
+#next{
+    display:flex;
+    position:relative;
+    top:120px;
+    right:-250px;
+    border: 2px solid var(--efa-white);
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    padding-left: 15px;
+    padding-top:10px;
+    padding-right:7px;
+    background-color: var(--efa-white);
+}
+#previous{
+    display:flex;
+    position:relative;
+    justify-content: flex-end;
+    left:-200px;
+    top:120px;
+    border: 2px solid var(--efa-white);
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    padding-right: 7px;
+    padding-top:10px;
+    padding-left:12px;
+    background-color: var(--efa-white);
+}
+aside{
+    position:absolute;
+    top:550px;
+    left:0;
+    padding-left: 30px;
+    width: 480px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.percentage{
+    margin-left: 20px;
+}
+.oldPrice{
+  padding-top: 30px;
+}
+.price{
+    padding-right:60px;
+}
+.counter{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter-container{
+    width:400px;
+    padding-bottom:20px;
+}
+.increase,.decrease{
+    align-items: center;
+}
+button{
+    width:400px;
+    box-shadow: 0px 5px 10px rgba(221, 149, 68, 0.881);
+
+}
+.cartfoot{
+    margin-right: 20px;
+
+}
+footer{
+    display: none;
+}
+.attribution {
+     font-size: 11px; text-align: center;
+     display: flex;
+     position:absolute;
+     top:980px;
+     color: var(--efa-orange-);
+     }
+    .attribution a {
+         color: var(--efa-black);
+         position:relative;
+         bottom:10px;
+         left:5px;
+         text-decoration: none;
+         }
+}
