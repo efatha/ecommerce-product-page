@@ -188,7 +188,8 @@ img,footer{
   .icon-menu{
     display: flex;
     position:absolute;
-    left: 10px;
+    cursor: pointer;
+    left: 20px;
     height: 30px;
     width:40px;
     top:30px;
@@ -200,25 +201,31 @@ img,footer{
 }
   .cart{
     position:relative;
-    left:240px;
+    left:140px;
     bottom:10px;
   }
   .profile{
     position: relative;
     bottom:10px;
-    left:260px;
+    left:160px;
     bottom:20px;
     width:40px;
 }
 .product1{
     border-radius: 0;
-    height: 450px;
-    width:480px;
+    height: auto;
+    padding:0;
+    width:500px;
     position:absolute;
     top:80px;
     left: 0px;
     z-index: -1;
+    max-width: auto;
 }
+header,aside{
+    flex-direction: row;
+    justify-content: center;
+  }
 #next{
     display:flex;
     position:relative;
@@ -250,7 +257,7 @@ img,footer{
 }
 aside{
     position:absolute;
-    top:550px;
+    top:620px;
     left:0;
     padding-left: 30px;
     width: 480px;
@@ -299,13 +306,13 @@ footer{
      font-size: 11px; text-align: center;
      display: flex;
      position:absolute;
-     top:980px;
+     top:1050px;
      color: var(--efa-orange-);
      }
     .attribution a {
          color: var(--efa-black);
          position:relative;
-         bottom:10px;
+         bottom:11px;
          left:5px;
          text-decoration: none;
          }
