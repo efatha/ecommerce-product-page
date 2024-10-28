@@ -165,15 +165,17 @@ img,footer{
 }
 @media (max-width:678px){
     *{
-        margin-top: 10px;
-        margin-left: 0vh;
-        margin-right: 0vh;
-        box-sizing: border-box;
+        margin: 0;
     }
   body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    padding-top: 35px;
+    margin: auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
   }
   ul{
     display: none;
@@ -220,7 +222,8 @@ img,footer{
     top:80px;
     left: 0px;
     z-index: -1;
-    max-width: auto;
+    width:498px;
+    max-width: 678px;
 }
 header,aside{
     flex-direction: row;
@@ -229,43 +232,49 @@ header,aside{
 #next{
     display:flex;
     position:relative;
-    top:120px;
-    right:-250px;
+    top:260px;
+    right:-340px;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:45px;
-    height:45px;
+    width:35px;
+    height:40px;
     padding-left: 15px;
     padding-top:10px;
-    padding-right:7px;
+    padding-right:2px;
     background-color: var(--efa-white);
 }
 #previous{
     display:flex;
     position:relative;
     justify-content: flex-end;
-    left:-200px;
-    top:120px;
+    left:-100px;
+    top:260px;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:45px;
-    height:45px;
-    padding-right: 7px;
+    width:35px;
+    height:40px;
+    padding-right: 1px;
     padding-top:10px;
     padding-left:12px;
     background-color: var(--efa-white);
 }
 aside{
     position:absolute;
-    top:620px;
+    top:600px;
     left:0;
-    padding-left: 30px;
+    padding-left: 20px;
     width: 480px;
+}
+p{
+    width:450px
 }
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top:20px;
+    padding-bottom:40px;
+    margin-top: 10px;
 }
 .percentage{
     margin-left: 20px;
@@ -274,7 +283,7 @@ aside{
   padding-top: 30px;
 }
 .price{
-    padding-right:60px;
+    padding-right:20px;
 }
 .counter{
     display:flex;
@@ -303,16 +312,19 @@ footer{
     display: none;
 }
 .attribution {
-     font-size: 11px; text-align: center;
+     font-size: 11px;
+     text-align: center;
      display: flex;
      position:absolute;
-     top:1050px;
+     top:1040px;
      color: var(--efa-orange-);
+     text-indent: 5px;
+     padding-left: 80px;
      }
     .attribution a {
          color: var(--efa-black);
          position:relative;
-         bottom:11px;
+         bottom:1px;
          left:5px;
          text-decoration: none;
          }
