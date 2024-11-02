@@ -222,8 +222,8 @@ img,footer{
     top:80px;
     left: 0px;
     z-index: -1;
-    width:498px;
-    max-width: 678px;
+    width:100%;
+    min-width: 500px;
 }
 header,aside{
     flex-direction: row;
@@ -236,7 +236,7 @@ header,aside{
     right:-340px;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:35px;
+    width:15%;
     height:40px;
     padding-left: 15px;
     padding-top:10px;
@@ -251,7 +251,7 @@ header,aside{
     top:260px;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:35px;
+    width:10%;
     height:40px;
     padding-right: 1px;
     padding-top:10px;
