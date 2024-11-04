@@ -32,3 +32,15 @@ console.log(decreaseBtn, increaseBtn, countDisplay);
          mainImage.src = thumbnail.src.replace('-thumbnail', '');
      });
  });
+
+ // Display elements in the cart session
+ const carte = document.querySelector(".cart");
+ carte.addEventListener('click', cart1);
+ function cart1(){
+   let text = document.getElementById("myCart")
+   text.innerHTML =`   
+      <h3 class="headCart">Cart</h3>
+      <div class="Cart-Result">Your cart is Empty</div>
+`;
+  text.style.display="flex";
+ };
