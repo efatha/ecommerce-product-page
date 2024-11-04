@@ -253,11 +253,14 @@ img,footer{
 #myCart{
     display: none;
     position:absolute;
+    box-sizing: border-box;
     z-index: 1;
-    left:40%;
-    bottom:20px;
-    width:250px;
-    height:200px;
+    top:16%;
+    right:3%;
+    left:3%;
+    bottom:100px;
+    width:94%;
+    height:440px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: var(--efa-white);
@@ -267,11 +270,12 @@ img,footer{
     display:flex;
     justify-content: center;
     position:relative;
-    top:40%;
+    top:55%;
+    padding-left: 25%;
 }
 .headCart{
-    padding-left:20px;
-    padding-top:10px;
+    padding-left:30px;
+    padding-top:20px;
   
 }
 header,aside{

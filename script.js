@@ -40,7 +40,8 @@ console.log(decreaseBtn, increaseBtn, countDisplay);
    let text = document.getElementById("myCart")
    text.innerHTML =`   
       <h3 class="headCart">Cart</h3>
-      <div class="Cart-Result">Your cart is Empty</div>
+      <div class="Cart-Result">Your cart is empty 
+      </div>
 `;
   text.style.display="flex";
  };
