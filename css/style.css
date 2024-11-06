@@ -316,7 +316,7 @@ aside{
     top:600px;
     left:0;
     padding-left: 20px;
-    width: 480px;
+    width: 100%;
 }
 p{
     width:450px
@@ -381,4 +381,14 @@ footer{
          left:5px;
          text-decoration: none;
          }
+}
+@media (min-width:500px ) and (max-width: 800px) {
+    aside{
+        top:700px;
+    }
+    .attribution{
+        top:1130px;
+        padding-bottom: 40px;
+    }
+
 }
