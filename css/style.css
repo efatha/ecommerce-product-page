@@ -136,6 +136,9 @@ button{
     color:var(--efa-black);
     font-weight: 700;
 }
+.closebtn{
+    display: none;
+}
 .counter{
     display: flex;
     flex-direction: row;

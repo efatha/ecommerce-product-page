@@ -46,18 +46,29 @@ console.log(decreaseBtn, increaseBtn, countDisplay);
   text.style.display="flex";
  };
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+// Open the side navigation
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("mySidenav").style.display = "flex";
+  const sidenav = document.getElementById("mySidenav");
+  const mainContent = document.querySelector("main");
+
+  sidenav.style.width = "250px"; // Expand the menu smoothly
+  sidenav.style.display = "flex";
   document.getElementById("closebtn").style.display = "flex";
-  document.querySelector("main").style.opacity = "0.3";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
+
+  // Apply opacity and background shading with delay
+  setTimeout(() => {
+    mainContent.style.opacity = "0.3";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.9)";
+
+    document.body.classList.add("shaded");
+  }, 100); // Delay to allow menu transition first
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-    
+// Close the side navigation
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.display = "none"; // Hide sidebar
+  document.getElementById("closebtn").style.display = "none";  // Hide close button
+  document.querySelector("main").style.opacity = "1";          // Reset main opacity
+  document.body.style.backgroundColor = "";                    // Reset background color
+}
