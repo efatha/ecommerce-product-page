@@ -14,6 +14,7 @@
 body{
     font-size: 16px;
     margin-left: 60px;
+    transition: all ease-in-out 1s;
 }
 /*styles the ul header*/
 ul{
@@ -154,7 +155,7 @@ button{
 .counter-container{
     display: flex;
     position:relative;
-    bottom:20px;
+    bottom:10px;
     flex-direction: row;
     background-color: var(--efa-light-grayish-blue);
     height:50px;
@@ -204,6 +205,8 @@ img,footer{
     margin: auto;
     width: 100%;
     max-width: 678px;
+    transition: all ease-in 1s;
+
   }
   ul{
     display: none;
@@ -225,7 +228,7 @@ img,footer{
     top:30px;
 }
 .icon-menu:hover{
-    transform:translate(5px);
+    transform:translate(px);
     transition: transform 2s;
 }
 
@@ -268,7 +271,7 @@ img,footer{
   }
   .closebtn{
     position: absolute;
-    left:5px;
+    left:-35px;
     text-decoration: none;
     color:var(--efa-grayish-blue);
   }
@@ -304,12 +307,11 @@ img,footer{
     position:absolute;
     box-sizing: border-box;
     z-index: 1;
-    top:16%;
+    top:24%;
     right:3%;
     left:3%;
-    bottom:100px;
     width:94%;
-    height:440px;
+    height:280px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: var(--efa-white);
@@ -319,8 +321,8 @@ img,footer{
     display:flex;
     justify-content: center;
     position:relative;
-    top:55%;
-    padding-left: 25%;
+    top:50%;
+    padding-left: 10%;
 }
 .headCart{
     padding-left:30px;
@@ -352,30 +354,30 @@ header,aside{
 #next{
     display:flex;
     position:relative;
-    top:150px;
-    right:-100%;
+    top:144px;
+    right:-130%;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:50%;
+    width:45%;
     height:40px;
     padding-left: 15px;
     padding-top:10px;
-    padding-right:12px;
+    padding-right:10px;
     background-color: var(--efa-white);
 }
 #previous{
     display:flex;
     position:relative;
     justify-content: flex-end;
-    left:-180%;
-    top:150px;
+    left:-195%;
+    top:144px;
     border: 2px solid var(--efa-white);
     border-radius: 50%;
-    width:50%;
+    width:45%;
     height:40px;
     padding-right: 15px;
     padding-top:10px;
-    padding-left:12px;
+    padding-left:10px;
     background-color: var(--efa-white);
 }
 aside{
@@ -398,6 +400,8 @@ p{
 }
 .percentage{
     margin-left: 20px;
+    position: relative;
+    bottom: 10px;
 }
 .oldPrice{
   padding-top: 30px;
@@ -413,16 +417,19 @@ p{
 }
 
 .counter-container{
-    width:300px;
+    width:290px;
     padding-bottom:10px;
+    margin-right: 20px;
 }
 .increase,.decrease{
     align-items: center;
 }
 button{
-    width:300px;
+    width:290px;
     box-shadow: 0px 5px 10px rgba(221, 149, 68, 0.881);
     margin-top: 20px;
+    margin-right: 20px;
+
 }
 
 .cartfoot{
@@ -439,8 +446,8 @@ footer{
      position:absolute;
      top:850px;
      color: var(--efa-orange-);
-     text-indent: 5px;
-     padding-left: 40px;
+     text-indent: 1px;
+     padding-bottom: 20px;
      }
     .attribution a {
          color: var(--efa-black);
