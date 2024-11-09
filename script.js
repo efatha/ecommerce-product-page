@@ -72,3 +72,31 @@ function closeNav() {
   document.querySelector("main").style.opacity = "1";          // Reset main opacity
   document.body.style.backgroundColor = "";                    // Reset background color
 }
+
+// JavaScript for Carousel
+let currentImageIndex = 0;
+const images = [
+  "images/image-product-1.jpg",
+  "images/image-product-2.jpg",
+  "images/image-product-3.jpg",
+  "images/image-product-4.jpg"
+];
+const productImage = document.querySelector(".product1");
+const nextButton = document.getElementById("next");
+const prevButton = document.getElementById("previous");
+
+function showImage(index) {
+  // Wrap around if index is out of bounds
+  if (index < 0) {
+    currentImageIndex = images.length - 1;
+  } else if (index >= images.length) {
+    currentImageIndex = 0;
+  } else {
+    currentImageIndex = index;
+  }
+  productImage.src = images[currentImageIndex];
+}
+
+// Event listeners for next and previous buttons
+nextButton.addEventListener("click", () => showImage(currentImageIndex + 1));
+prevButton.addEventListener("click", () => showImage(currentImageIndex - 1));
