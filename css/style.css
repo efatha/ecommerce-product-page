@@ -464,8 +464,51 @@ footer{
         top:700px;
     }
     .attribution{
-        top:1130px;
+        top:1120px;
         padding-bottom: 40px;
     }
-
+  #next{
+    width:60%;
+    height:50px;
+    top:270px;
+    left:240px;
+    padding-right: 2px;
+    padding-top:12px;
+    padding-left:18px;
+  }
+  #previous{
+    position:relative;
+    width:60%;
+    height:50px;
+    top:270px;
+    left:-300px;
+    padding-right: 8px;
+    padding-top:12px;
+    padding-left:18px;
+  }
+  .profile{
+    position: relative;
+    bottom:10px;
+    left:200px;
+    bottom:20px;
+    width:40px;
+}
+.cart{
+    position:relative;
+    left:180px;
+    bottom:10px;
+  }
+  button,.counter-container{
+    width:500px;
+}
+p{
+    width:430px;
+}
+.Cart-Result{
+    padding-left: 25%;
+}
+#myCart{
+    height:500px;
+    top:16vh;
+}
 }
