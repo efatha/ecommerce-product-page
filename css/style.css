@@ -465,9 +465,9 @@ footer{
         position:absolute;
         box-sizing: border-box;
         z-index: 1;
-        top:15%;
-        right:4%;
-        left:4%;
+        top:20%;
+        right:2%;
+        left:2%;
         width:92%;
         height:280px;
         border-radius: 10px;
