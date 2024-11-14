@@ -459,6 +459,22 @@ footer{
          text-decoration: none;
          }
 }
+@media (max-width:900px) {
+    #myCart{
+        display: none;
+        position:absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        top:9%;
+        right:2%;
+        left:2%;
+        width:96%;
+        height:280px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: var(--efa-white);
+    }
+}
 @media (min-width:500px ) and (max-width: 800px) {
     aside{
         top:700px;
