@@ -465,10 +465,10 @@ footer{
         position:absolute;
         box-sizing: border-box;
         z-index: 1;
-        top:15%;
-        right:2%;
-        left:2%;
-        width:96%;
+        top:16%;
+        right:4%;
+        left:4%;
+        width:92%;
         height:280px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
