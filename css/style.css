@@ -46,8 +46,24 @@ header,.avatar-bucket{
     border-radius: 50%;
 }
 .cart{
-    margin-right: 0px;
+    margin-right: 10px;
 }
+.count1{  /* This count1 is the number to be displayed on the cart header when users add to cart*/
+    color:var(--efa-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--efa-orange-);
+    border-radius: 10px 10px 10px 10px ;
+    width: 20px;
+    height:16px;
+    position:absolute;
+    right:175px;
+    top:24px;
+    z-index: 1;
+    font-size: 0.8rem;
+    font-weight: 900;
+ }
 .line{
     position: relative;
     bottom:30px;
@@ -458,6 +474,21 @@ footer{
          left:5px;
          text-decoration: none;
          }
+         .count1{
+            color:var(--efa-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--efa-orange-);
+            border-radius: 10px 10px 10px 10px ;
+            width: 20px;
+            height:15px;
+            position:absolute;
+            right:58px;
+            top:18px;
+            z-index: 1;
+            font-size: 0.9rem;
+         }
 }
 @media (min-width:500px ) and (max-width: 800px) {
     aside{
@@ -498,6 +529,9 @@ footer{
     left:180px;
     bottom:10px;
   }
+  .count1{
+    right:116px; /* This code determined the position of the count1 in the double screen view */
+  }
   button,.counter-container{
     width:500px;
 }
@@ -511,4 +545,59 @@ p{
     height:500px;
     top:16vh;
 }
+}
+@media (min-width:350px) and (max-width:400px) {
+    aside{
+        top:470px;
+    }   
+    .attribution{
+        top:930px;
+        padding-bottom: 40px;
+    }
+    .count1{
+        right:90px; 
+      }
+}
+@media (min-width:430px) and (max-width:590px) {
+    aside{
+        top:600px;
+    }   
+    .attribution{
+        top:1070px;
+        padding-bottom: 40px;
+    }
+    .count1{
+        right:100px; 
+      }
+      #next{
+        width:60%;
+        height:50px;
+        top:220px;
+        left:180px;
+        padding-right: 2px;
+        padding-top:12px;
+        padding-left:18px;
+      }
+      #previous{
+        position:relative;
+        width:60%;
+        height:50px;
+        top:220px;
+        left:-250px;
+        padding-right: 8px;
+        padding-top:12px;
+        padding-left:18px;
+      }
+      .profile{
+        position: relative;
+        bottom:10px;
+        left:150px;
+        bottom:20px;
+        width:40px;
+    }
+    .cart{
+        position:relative;
+        left:130px;
+        bottom:10px;
+      }
 }

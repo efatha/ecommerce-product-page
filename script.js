@@ -3,23 +3,30 @@
 const decreaseBtn = document.querySelector('.decrease');
 const increaseBtn = document.querySelector('.increase');
 const countDisplay = document.querySelector('.count');
+const countDisplay1 = document.querySelector('.count1');
+
 
 let count = 0;
+let count1 = 0;
 
 decreaseBtn.addEventListener("click", () => {
   if (count > 0) {  // Ensure the count doesn't go below 0
     count--;
+    count1--;
   }
   updateCount();
 });
 
 increaseBtn.addEventListener("click", () => {
   count++;
+  count1++;
+
   updateCount();
 });
 
 function updateCount() {
   countDisplay.textContent = count;
+  countDisplay1.textContent = count1;
 }
 console.log(decreaseBtn, increaseBtn, countDisplay);
 
