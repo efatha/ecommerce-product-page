@@ -193,6 +193,7 @@ button{
     display: inline-block;
     position: relative;
     bottom:10px;
+    cursor:pointer;
 }
 footer{
     position: relative;
@@ -204,6 +205,13 @@ img,footer{
 }
 .footImg:hover{
     opacity: 0.5;
+}
+@media (min-width:970px) { 
+   button{
+    display: inline-block;
+    position:relative;
+    bottom:20px;
+   }
 }
 @media (max-width:678px){
     *{
