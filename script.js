@@ -35,9 +35,8 @@ const countAddToCart = document.querySelector('.addToCart');
 //Hide and display the active count number in the header
 countDisplay1.style.display="none";// This code hides the initial count element by html by when you click on add to cart, it will generate the current number on your counter
 countAddToCart.addEventListener("click", ()=>{
-countDisplay1.style.display="flex";
-  
-})
+countDisplay1.style.display="flex"; 
+});
  // JavaScript for changing main product image
  const thumbnails = document.querySelectorAll('.image-gallery img');
  const mainImage = document.querySelector('.product1');
