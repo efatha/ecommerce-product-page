@@ -29,6 +29,8 @@ li:hover{
     border-bottom:4px solid var(--efa-orange-);
     padding-bottom: 20px;
     color: var(--efa-dark-grayish-blue);
+    transition: border-bottom 0.5s;
+
 }
 header,.avatar-bucket{
     display: flex;
