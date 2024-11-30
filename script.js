@@ -50,15 +50,23 @@ countDisplay1.style.display="flex";
  // Display elements in the cart session
  const carte = document.querySelector(".cart");
  carte.addEventListener('click', cart1);
+ const product = document.getElementById("currentPrice").innerText; 
  function cart1(){
-   let text = document.getElementById("myCart")
-   text.innerHTML =`   
-      <h3 class="headCart">Cart</h3>
-      <div class="Cart-Result">Your cart is empty 
-      </div>
-`;
-  text.style.display="flex";
- };
+  let text = document.getElementById("myCart")
+ if(countDisplay.textContent.length > 0){
+    text.innerHTML =`   
+       <h3 class="headCart">Cart</h3>
+       <div class="Cart-Result">Your cart is ${product}*${countDisplay.textContent}
+       </div>
+ `;
+} else{
+  text.innerHTML += `
+    <h3 class="headCart">Cart</h3>
+    <div class="Cart-Result">Your cart is empty</div>
+  `;
+}
+text.style.display="flex";
+};
 
 // Open the side navigation
 function openNav() {
