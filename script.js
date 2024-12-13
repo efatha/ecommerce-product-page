@@ -54,11 +54,15 @@ countDisplay1.style.display="flex";
  function cart1() {
    let text = document.getElementById("myCart");
    let count = parseInt(countDisplay.textContent) || 0; // Ensure count is a number
-   
+   var title = document.querySelector("h1").innerHTML="Fall Limited Edition Sneakers";
+
    if (count > 0) {
      text.innerHTML = `   
         <h3 class="headCart">Cart</h3>
-        <div class="Cart-Result">Your cart is ${product} × ${count}</div>
+        <div class="Cart-Result"><img src="${mainImage.src}" class="img-in-cart">${title}<br>${product} × ${count}
+        <img src="images/icon-delete.svg" class="delete">
+        </div>
+        <button type="button" class="checkout">Checkout</button>
      `;
    } else {
      text.innerHTML = `
@@ -66,7 +70,7 @@ countDisplay1.style.display="flex";
         <div class="Cart-Result">Your cart is empty</div>
      `;
    }
-   
+
    text.style.display = "flex"; // Ensure the display style is applied
  }
  
