@@ -55,11 +55,12 @@ countDisplay1.style.display="flex";
    let text = document.getElementById("myCart");
    let count = parseInt(countDisplay.textContent) || 0; // Ensure count is a number
    var title = document.querySelector("h1").innerHTML="Fall Limited Edition Sneakers";
+   var result = product * count; 
 
    if (count > 0) {
      text.innerHTML = `   
         <h3 class="headCart">Cart</h3>
-        <div class="Cart-Result"><img src="${mainImage.src}" class="img-in-cart">${title}<br>${product} × ${count}
+        <div class="Cart-Result"><img src="${mainImage.src}" class="img-in-cart">${title}<br>$${product} × ${count} $${result}
         <img src="images/icon-delete.svg" class="delete">
         </div>
         <button type="button" class="checkout">Checkout</button>
