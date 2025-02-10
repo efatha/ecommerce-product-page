@@ -54,7 +54,7 @@ countDisplay1.style.display="flex";
  function cart1() {
    let text = document.getElementById("myCart");
    let count = parseInt(countDisplay.textContent) || 0; // Ensure count is a number
-   var title = document.querySelector("h1").innerHTML="Fall Limited Edition Sneakers";
+   var title = document.querySelector("h1").innerText;
    var result = product * count; 
 
    if (count > 0) {
