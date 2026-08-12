@@ -145,6 +145,8 @@ aside{
 .product1{
     border-radius: 10px;
     height: 320px;
+    transition: opacity 240ms ease, transform 240ms ease;
+    transform-origin: center center;
 }
 #next, #previous{
     display:none;

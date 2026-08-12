@@ -41,9 +41,9 @@ countDisplay1.style.display="flex";
  const thumbnails = document.querySelectorAll('.image-gallery img');
  const mainImage = document.querySelector('.product1');
 
- thumbnails.forEach((thumbnail) => {
+ thumbnails.forEach((thumbnail, index) => {
      thumbnail.addEventListener('click', () => {
-         mainImage.src = thumbnail.src.replace('-thumbnail', '');
+         showImage(index);
      });
  });
 
@@ -113,17 +113,38 @@ const images = [
 const productImage = document.querySelector(".product1");
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("previous");
+let isAnimating = false;
 
 function showImage(index) {
-  // Wrap around if index is out of bounds
-  if (index < 0) {
-    currentImageIndex = images.length - 1;
-  } else if (index >= images.length) {
-    currentImageIndex = 0;
-  } else {
-    currentImageIndex = index;
-  }
-  productImage.src = images[currentImageIndex];
+  if (isAnimating) return;
+
+  let newIndex = index;
+  if (index < 0) newIndex = images.length - 1;
+  if (index >= images.length) newIndex = 0;
+  if (newIndex === currentImageIndex) return;
+
+  isAnimating = true;
+
+  productImage.style.transition = 'opacity 240ms ease, transform 240ms ease';
+  productImage.style.opacity = '0.3';
+  productImage.style.transform = 'scale(0.98)';
+
+  const nextSrc = images[newIndex];
+  const preload = new Image();
+  preload.src = nextSrc;
+  preload.onload = () => {
+    setTimeout(() => {
+      productImage.src = nextSrc;
+      currentImageIndex = newIndex;
+      requestAnimationFrame(() => {
+        productImage.style.opacity = '1';
+        productImage.style.transform = 'scale(1)';
+      });
+      setTimeout(() => {
+        isAnimating = false;
+      }, 240);
+    }, 180);
+  };
 }
 
 // Event listeners for next and previous buttons
