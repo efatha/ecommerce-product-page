@@ -61,7 +61,7 @@ countDisplay1.style.display="flex";
      text.innerHTML = `   
         <h3 class="headCart">Cart</h3>
         <div class="Cart-Result"><img src="${mainImage.src}" class="img-in-cart">${title}<br>$${product} × ${count} $${result}
-        <img src="images/icon-delete.svg" class="delete">
+        <img src="images/icon-delete.svg" class="delete" alt="Delete item">
         </div>
         <button type="button" class="checkout">Checkout</button>
      `;
@@ -71,10 +71,21 @@ countDisplay1.style.display="flex";
         <div class="Cart-Result">Your cart is empty</div>
      `;
    }
-
    text.style.display = "flex"; // Ensure the display style is applied
- }
- 
+  const deleteIcon = text.querySelector('.delete');
+  if (deleteIcon) {
+    deleteIcon.addEventListener('click', () => {
+      count = 0;
+      count1 = 0;
+      updateCount();
+      countDisplay1.style.display = 'none';
+      text.innerHTML = `
+         <h3 class="headCart">Cart</h3>
+         <div class="Cart-Result">Your cart is empty</div>
+      `;
+    });
+  }
+}
 // Open the side navigation
 function openNav() {
   const sidenav = document.getElementById("mySidenav");
