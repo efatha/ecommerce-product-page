@@ -63,7 +63,7 @@ countDisplay1.style.display="flex";
         <div class="Cart-Result"><img src="${mainImage.src}" class="img-in-cart">${title}<br>$${product} × ${count} $${result}
         <img src="images/icon-delete.svg" class="delete" alt="Delete item">
         </div>
-        <button type="button" class="checkout">Checkout</button>
+        <a href="https://buy.stripe.com/test_fZufZg3acevW4cw2tI97G01"><button type="button" class="checkout">Checkout</button><//a>
      `;
    } else {
      text.innerHTML = `
